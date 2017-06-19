@@ -8,7 +8,13 @@
 /* =======================================================
 *
 * 	Template Style */
-
+.fh5co-description {
+  text-align: left;
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+  position: relative;
+}
 
 .project {
   background-size: cover;
