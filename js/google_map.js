@@ -36,9 +36,10 @@ function init() {
         $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
             var p = data.results[0].geometry.location
             var latlng = new google.maps.LatLng(p.lat, p.lng);
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map
+            new google.maps.Marker({
+                position: latlng,
+                map: map,
+                icon: 'images/loc.png'
             });
 
         });
